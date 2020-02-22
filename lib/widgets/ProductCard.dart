@@ -8,7 +8,11 @@ class ProductCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
+    return GestureDetector(
+      onTap: ()=>{ makeNavigation(context)
+
+      },
+     child:  Card(
       child: Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[Image.asset('assets/images/download1.jpeg'),
@@ -29,10 +33,16 @@ class ProductCard extends StatelessWidget {
               ],
 
             )
-        );
+        ),
+    );
 
 
 
+
+  }
+
+  makeNavigation(BuildContext context) {
+  Navigator.pushNamed(context, 'pg');
 
   }
 }

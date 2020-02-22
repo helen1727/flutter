@@ -1,6 +1,9 @@
 
 
+import 'dart:js';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_app33/page/page.dart';
 
 import 'HomePage/homepage.dart';
 
@@ -12,6 +15,7 @@ class MyApp extends StatelessWidget {
   final routes = <String, WidgetBuilder>{
 
     'home': (context) => HomePage(),
+    'pg':(context) => CreditPage(),
     //'login':(context) => LoginPage(),
   };
 
